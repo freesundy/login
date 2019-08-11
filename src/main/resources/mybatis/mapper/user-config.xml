@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gailguo.login.mapper.UserMapper">
+    <select id="findById" parameterType="Integer" resultType="com.gailguo.login.bean.CustomUser">
+    select * from custom_user where custom_id = #{ value }
+    </select>
+
+</mapper>

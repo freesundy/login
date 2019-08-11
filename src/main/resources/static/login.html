@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://cdn.staticfile.org/angular.js/1.7.0/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body ng-app="guoApp">
+    Login
+    <div ng-controller="loginCtrl">
+        <form style="margin-right:80px;padding-bottom:20px;padding-top:20px;">
+            <tr>
+                用户名: <input  style="width:150px;height:30px;" ng-model="username"/></br>
+            </tr>
+
+            <tr>
+                密码 &nbsp&nbsp: <input  style="width:150px;height:30px;margin-top:30px;" ng-model="password"/></br>
+            </tr>
+
+            <tr>
+
+                <button type="button"; style="width:60px; height:30px;margin-top:30px;" ng-click="login()" ;> 登陆</button>
+            </tr>
+        </form>
+    </div>
+</body>
+</html>
